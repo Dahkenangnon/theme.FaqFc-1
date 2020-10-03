@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Help </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./_assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./_vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./_assets/css/custom.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23019901-1"></script>
+    <script src="http://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-23019901-1');
+    </script>
+    <style type="text/css">
+     
+    </style>
+  </head>
+
+<body id="home">
+
+	<div class="bs-component d-flex justify-content-around">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary ">
+        <a href="home.html" class="navbar-brand">
+          <img class="d-inline-block mx-4" src="_assets/img/logo-nav.svg" alt="" width="30" height="28">Help
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">Faq</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lire_plus.html">Forum</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <button type="button" class="btn btn-outline-secondary">Aller à etudiant.bj</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+  <section class="content-header mt-5">
+      <h1>
+        FORUM
+        <a href="home.html"><small>Preview</small></a>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="home.html"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">forum</a></li>
+      </ol>
+    </section>
+
+  <div class="section-preview breadcrumb col-md-10 mx-auto col-lg-8 mt-5" style="margin-bottom: 3%; padding-left: 10%;">
+    <div class="mt-5"></div>
+    <form method="post" action="<?php echo base_url(); ?>location/trier" class="form-inline">
+      <div class="row">
+        <div class="form-group">
+          <label class="mb-2 text-primary" style="font-weight: bold;">Catégorie :</label>
+          <select class="form-control form-control-sm mx-sm-3 mb-2x" name="categorie">
+            <option value="none">Choisir une Rubrique</option>
+            <option value="Categorie_1"><a href="#Rub1"> Rubrique 1</a></option>
+            <option value="Categorie_2"><a href="#Rub2"> Rubrique 2</a></option>
+            <option value="Categorie_3"><a href="#Rub3"> Rubrique 3</a></option>
+          </select>
+        </div>
+        <div>
+          <button class="btn btn-dark" type="submit">Trier</button>
+        </div>
+      </div>
+    </form>
+  </div>
+    
+    <div class="row">
+      <div class="col-md-8">
+        <div class="section-preview col-md-11 mx-auto">
+      <h1 class="mb-3 text-dark">Sujets de discution</h1>
+      <ol class="breadcrumb" id="Rub1">
+        <li class="breadcrumb-item active"><i style="margin: 5px; color: #FE9A2E;" class="fa fa-rss"></i>Rubrique 1</li>
+      </ol>
+
+      <div class="card border-warning">
+        <div class="card-header bg-light">
+          <div class="row no-gutter">
+            <div class="col-8 text-center">
+              <i class="fa fa-file-o" aria-hidden="true"></i>
+            </div>
+            <div class="col-1 text-center">
+              <i class="fa fa-comments" aria-hidden="true"></i> 
+            </div>
+            <div class="col-3 text-center">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
+              </div>
+              <div class="col-1 text-center">
+                58
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Ducon Arold</a> <br>
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 14/18/2020 à 
+                18:50 par
+              </div>
+            </div>
+
+            <hr style="color: black; width: 100%;"><br>
+
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content....</p>
+              </div>
+              <div class="col-1 text-center">
+                545
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Rigobert Anselme</a><br> 
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 14/18/2020 à 
+                18:50 par 
+              </div>
+            </div>
+
+            <hr style="color: black; width: 100%;"><br>
+
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
+              </div>
+              <div class="col-1 text-center">
+                255
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Dagobert Ibrahim</a><br> 
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 20/09/2020 à 
+                18:50 par
+              </div>
+            </div>
+    
+            <hr style="color: black; width: 100%;"><br>
+
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
+              </div>
+              <div class="col-1 text-center">
+                255
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Sodakel Bikel</a><br>
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 20/09/2020 à 
+                18:50 par
+              </div>
+            </div>
+
+            <hr style="color: black; width: 100%;"><br>
+
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
+              </div>
+              <div class="col-1 text-center">
+                255
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">DOSSOU Jule</a><br>
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 20/09/2020 à 
+                18:50 par
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div><br><br><br>
+
+      <ol class="breadcrumb" id="Rub2">
+        <li class="breadcrumb-item active rubrique"><i style="margin: 5px; color: #FE9A2E;" class="fa fa-rss"></i>Rubrique 2</li>
+      </ol>
+
+      <div class="card border-warning">
+        <div class="card-header bg-light">
+          <div class="row no-gutter">
+            <div class="col-8 text-center">
+              <i class="fa fa-file-o" aria-hidden="true"></i>
+            </div>
+            <div class="col-1 text-center">
+              <i class="fa fa-comments" aria-hidden="true"></i> 
+            </div>
+            <div class="col-3 text-center">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
+              </div>
+              <div class="col-1 text-center">
+                58
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Ducon Arold</a> <br>
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 14/18/2020 à 
+                18:50 par
+              </div>
+            </div>
+
+            <hr style="color: black; width: 100%;"><br>
+
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
+              </div>
+              <div class="col-1 text-center">
+                545
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Rigobert Anselme</a> <br>
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 14/18/2020 à 
+                18:50 par
+              </div>
+            </div>
+
+            <hr style="color: black; width: 100%;"><br>
+
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
+              </div>
+              <div class="col-1 text-center">
+                255
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Dagobert Ibrahim</a> <br>
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 20/09/2020 à 
+                18:50 par
+              </div>
+            </div>
+    
+            <hr style="color: black; width: 100%;"><br>
+
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
+              </div>
+              <div class="col-1 text-center">
+                255
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Sodakel Bikel</a> <br>
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 20/09/2020 à 
+                18:50 par
+              </div>
+            </div>
+
+            <hr style="color: black; width: 100%;"><br>
+
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
+              </div>
+              <div class="col-1 text-center">
+                255
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">DOSSOU Jule</a> <br>
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 20/09/2020 à 
+                18:50 par 
+              </div>
+            </div>
+          </ul>
+
+        </div>
+      </div><br><br><br>
+
+
+      <ol class="breadcrumb" id="Rub3">
+        <li class="breadcrumb-item active"><i style="margin: 5px; color: #FE9A2E;" class="fa fa-rss"></i>Rubrique 3</li>
+      </ol>
+
+      <div class="card border-warning">
+        <div class="card-header bg-light">
+          <div class="row no-gutter">
+            <div class="col-8 text-center">
+              <i class="fa fa-file-o" aria-hidden="true"></i>
+            </div>
+            <div class="col-1 text-center">
+              <i class="fa fa-comments" aria-hidden="true"></i> 
+            </div>
+            <div class="col-3 text-center">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
+              </div>
+              <div class="col-1 text-center">
+                58
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Ducon Arold</a> <br>
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 14/18/2020 à 
+                18:50 par
+              </div>
+            </div>
+
+            <hr style="color: black; width: 100%;"><br>
+
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
+              </div>
+              <div class="col-1 text-center">
+                545
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Rigobert Anselme</a> <br>
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 14/18/2020 à 
+                18:50 par 
+              </div>
+            </div>
+
+            <hr style="color: black; width: 100%;"><br>
+
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
+              </div>
+              <div class="col-1 text-center">
+                255
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Dagobert Ibrahim</a> <br>
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 20/09/2020 à 
+                18:50 par
+              </div>
+            </div>
+    
+            <hr style="color: black; width: 100%;"><br>
+
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
+              </div>
+              <div class="col-1 text-center">
+                255
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Sodakel Bikel</a> <br>
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 20/09/2020 à 
+                18:50 par
+              </div>
+            </div>
+
+            <hr style="color: black; width: 100%;"><br>
+
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
+              </div>
+              <div class="col-1 text-center">
+                255
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">DOSSOU Jule</a> <br>
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 20/09/2020 à 
+                18:50 par
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div><br>
+    </div>
+  </div>
+
+    <div class="col-md-4">
+      <div class="section-preview col-md-11 mx-auto" style="margin-top: 5%; margin-right: 5%;">
+        
+        <h3 class="text-primary text-center text-uppercase">Creer un sujet</h3><br>
+        
+        <form method="POST" action="<?php echo base_url(); ?>blog/vue">
+          <br>
+          <label class="text-primary">Catégorie : </label>
+          <div class="form-group">
+            <select class="custom-select">
+              <option selected="">Choisissez une catégorie ...</option>
+              <option value="1">Catégorie 1</option>
+              <option value="2">Catégorie 2</option>
+              <option value="3">Catégorie 3</option>
+            </select>
+          </div>
+
+          <label class="text-primary">Titre du sujet :</label>
+          <input class="form-control" type="text" name="nom" required="">
+          <br>
+          <label class="text-primary">Contenu :</label>
+          <textarea class="form-control" id="editor1" name="message" required="" placeholder="Inscrivez votre sujet ici ..."></textarea>
+          <br>
+          <button type="submit" class="btn btn-primary btn-block"> Poster</button>
+        </form>
+      </div>
+    </div>
+
+	</div>
+
+    <footer class="footer-distributed col-12">
+
+        <div class="footer-right">
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+        <div class="footer-left">
+
+          <p class="footer-links">
+            <a class="link-1" href="home.html">Home</a>
+
+            <a href="faq.html">Faq</a>
+
+            <a href="fc.html">Forum</a>
+
+            <a href="#">Contact</a>
+          </p>
+
+          <p>Geek UNSTIM &copy; 2020</p>
+        </div>
+        <div class="dmtop">Scroll to Top</div>
+
+    </footer>
+
+    
+    <script src="./_assets/jquery/jquery.min.js"></script>
+    <script src="./_assets/js/main.js"></script>
+
+    <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+      /* FAQ */
+      $(function() {
+        // Since there's no list-group/tab integration in Bootstrap
+        $('.list-group-item').on('click',function(e){
+            var previous = $(this).closest(".list-group").children(".active");
+            previous.removeClass('active'); // previous list-item
+            $(e.target).addClass('active'); // activated list-item
+          });
+      });
+      /* FAQ */
+    </script>
+    <script type="text/javascript">
+     CKEDITOR.replace('editor1');
+    </script>
+</body>
+</html>

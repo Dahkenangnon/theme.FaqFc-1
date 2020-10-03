@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Help </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./_assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./_vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./_assets/css/custom.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23019901-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-23019901-1');
+    </script>
+  </head>
+  <body id="home">
+    <div class="bs-component d-flex justify-content-around">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary ">
+        <a href="home.html" class="navbar-brand">
+          <img class="d-inline-block mx-4" src="_assets/img/logo-nav.svg" alt="" width="30" height="28">Help
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">Faq</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="fc.html">Forum</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <button type="button" class="btn btn-outline-secondary">Aller à etudiant.bj</button>
+            </form>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Content Header (Page header) -->
+    <section class="content-header mt-5">
+      <h1>
+        Forum E-learning
+        <small><a href="fc.html">Preview</a></small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="home.html"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li>Rubrique 1</li>
+      </ol>
+    </section>
+    <!-- Content Header (Page header) -->
+
+    <div class="section-preview mt-2 container">
+
+      <div class="row">
+      <div class="col-md-8  col-xs-12  col-sm-12">
+        <article class="mb-5">
+          <div class="card border-warning mb-3">
+
+              <div class="card-header bg-transparent border-warning bg-light"><i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 14/18/2020 à 18:50 par <i class="fa fa-user-o" style="margin: 10px;" aria-hidden="true"></i><a href="#">Ducon Arold</a></div>
+
+              <div class="card-body">
+                <h5 class="card-title"><a href="#">Success card title</a></h5>
+                <p class="card-text" style="margin-left: 10px;">
+                Annoncée depuis longtemps, vous l'attendiez avec impatience. PHPBoost v6.0 nommée Zonda sort ce jour en version bêta1.
+                Vous pouvez la télécharger ici pour l'installer de votre côté et tester les différentes fonctionnalités.
+                Vous trouverez l'actualité dédiée à cette annonce ici.
+                Comme pour chaque nouvelle version majeure, nous vous invitons à la télécharger, la tester en profondeur et, pourquoi pas, tenter une migration de votre site dans un environnement de test.
+                Mais attention, Zonda bêta1 ne doit pas être utilisée en production.
+                Vous pouvez dès maintenant déclarer les imperfections dans le Bugtracker, en choisissant 6.0.b1 en version détectée.
+                Une nouveauté : un site de test dédié à la bêta est à votre disposition. Il fonctionne de la même manière que le site de démo : il est réinitialisé régulièrement et suivra les différentes évolutions de la bêta.
+                </p>
+                <div class="row pull-right">
+                  <button type="button" class="btn btn-outline-secondary pull-right mr-2" data-toggle="modal" data-target="#edit" >Modifier</button>
+                  <button type="button" class="btn btn-outline-danger pull-right mr-2" data-toggle="modal" data-target="#delete">Supprimer</button>
+                </div>
+              </div>
+              <div class="card-footer bg-transparent border-warning">
+                <h5 class="text-dark pull-left">Réactions</h5>
+                <span style="margin: 20px;">
+                  <span class="post">25</span><i class="fa fa-thumbs-o-up"></i>
+                  <span class="post">102 </span><i class="fa fa-thumbs-o-down"></i>
+                </span>
+              </div>
+          </div>
+        </article>
+
+        <!-- Delete -->
+        <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Supprimer message</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Etes-vous sûr de vouloir supprimer ce message ?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Non</button>
+                <button type="button" class="btn border-info">OUI</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Delete -->
+
+        <!-- Edit -->
+        <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modifier message</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form method="POST" action="">
+                <label class="text-primary">Nom :</label>
+                <input class="form-control" type="text" name="pseudo" placeholder="Nom de l_étudiant">
+                <br>
+                <label class="text-primary">Catégorie : </label>
+                <div class="form-group">
+                    <select class="custom-select">
+                      <option>Choisissez une catégorie ...</option>
+                      <option value="1" selected="">"Catégorie choisie"</option>
+                      <option value="2">Catégorie 2</option>
+                      <option value="3">Catégorie 3</option>
+                    </select>
+                  </div>
+
+                <label class="text-primary">Titre du sujet :</label>
+                <input class="form-control" type="text" name="nom" required="" value="Success card title">
+                <br>
+                <label class="text-primary">Corps du sujet:</label>
+                <textarea class="form-control" id="editor1" name="message" required rows="5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea>
+                <br>
+              </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger border-" data-dismiss="modal">Fermer</button>
+                <button type="button" class="btn border-info">Save change</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Edit -->
+
+        <h3 class="mb-4">Tous les commentaires</h3>
+        <div class="col-md-11 mx-auto">
+          <div class="show mb-3" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <strong class="mr-auto"><i class="fa fa-user-o" style="margin-right: 10px;" aria-hidden="true"></i><a href="#">DOSSOU Bikel</a></strong>
+              <small><i class="fa fa-clock-o" style="margin-right: 10px;" aria-hidden="true"></i>11 mins ago</small>
+            </div>
+            <div class="toast-body">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </div>
+          </div>
+          <div class="show mb-3" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <strong class="mr-auto"><i class="fa fa-user-o" style="margin-right: 10px;" aria-hidden="true"></i><a href="#">Ahissou Toto</a></strong>
+              <small><i class="fa fa-clock-o" style="margin-right: 10px;" aria-hidden="true"></i>11 mins ago</small>
+            </div>
+            <div class="toast-body">
+              OK
+            </div>
+          </div>
+          <div class="show mb-3" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <strong class="mr-auto"><i class="fa fa-user-o" style="margin-right: 10px;" aria-hidden="true"></i><a href="#">Jean Noukpo</a></strong>
+              <small><i class="fa fa-clock-o" style="margin-right: 10px;" aria-hidden="true"></i>11 mins ago</small>
+            </div>
+            <div class="toast-body">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </div>
+          </div>
+          <div class="show mb-3" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <strong class="mr-auto"><i class="fa fa-user-o" style="margin-right: 10px;" aria-hidden="true"></i><a href="#">Ariel GOUDJO</a></strong>
+              <small><i class="fa fa-clock-o" style="margin-right: 10px;" aria-hidden="true"></i>11 mins ago</small>
+            </div>
+            <div class="toast-body">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </div>
+          </div>
+          <div class="show mb-3" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <strong class="mr-auto"><i class="fa fa-user-o" style="margin-right: 10px;" aria-hidden="true"></i><a href="#">Laplace Lenovo</a></strong>
+              <small><i class="fa fa-clock-o" style="margin-right: 10px;" aria-hidden="true"></i>11 mins ago</small>
+            </div>
+            <div class="toast-body">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </div>
+          </div>
+        </div>
+
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-md-4  col-xs-12  col-sm-12">
+        <h4 class="text-center text-uppercase">Laisser un commentaire</h4><br>
+        <form method="POST" action="">
+          <div class="form-group">
+            <label class="post" style="font-weight: bold;">Nom : </label>
+            <input class="form-control" type="text" name="pseudo" placeholder="Nom de l'étudiant ">
+          </div>
+
+          <div class="form-group">
+            <label class="post" style="font-weight: bold;">Réaction : </label>
+            <select class="custom-select">
+              <option selected="">Choisissez une réaction ...</option>
+              <option value="like"><i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;&nbsp;J'aime</option>
+              <option value="dislike"><i class="fa fa-thumbs-down" aria-hidden="true"></i>&nbsp;&nbsp;Je déteste</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="post" style="font-weight: bold;">Commentaire : </label>
+            <textarea class="form-control" placeholder="Inscrivez votre commentaire ..." id="editor1" name="commentaire" required=""></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary border-warning btn-block"> Commenter </button>
+        </form>
+      </div>
+    </div>
+    </div>
+
+        <div class="dmtop">Scroll to Top</div>
+
+
+      <footer class="footer-distributed">
+
+        <div class="footer-right">
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+        <div class="footer-left">
+
+          <p class="footer-links">
+            <a class="link-1" href="home.html">Home</a>
+
+            <a href="faq.html">Faq</a>
+
+            <a href="fc.html">Forum</a>
+
+            <a href="#">Contact</a>
+          </p>
+
+          <p>Geek UNSTIM &copy; 2020</p>
+        </div>
+
+      </footer>
+    <script src="./_assets/jquery/jquery.min.js"></script>
+    <script src="./_assets/js/main.js"></script>
+    <script src="./_vendor/jquery/dist/jquery.min.js"></script>
+    <script src="./_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./_assets/js/custom.js"></script>
+    <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+      /* FAQ */
+      $(function() {
+        // Since there's no list-group/tab integration in Bootstrap
+        $('.list-group-item').on('click',function(e){
+            var previous = $(this).closest(".list-group").children(".active");
+            previous.removeClass('active'); // previous list-item
+            $(e.target).addClass('active'); // activated list-item
+          });
+      });
+      /* FAQ */
+    </script>
+
+  </body>
+</html>

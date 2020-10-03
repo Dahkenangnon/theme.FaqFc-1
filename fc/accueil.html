@@ -1,0 +1,196 @@
+<?php include('header.html'); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="../_assets/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    
+	<script src="https://kit.fontawesome.com/4c18f1b03c.js"></script>
+  	<script src="http://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="icon" type="image/jpg" href="divjoy-custom.png">
+
+	<title>Forum Communautaire</title>
+	<style type="text/css">
+		html, body {
+			position: relative;
+		  height: 100%;
+		}
+		
+		.post{
+			font-size: 18px;
+		}
+	</style>
+
+<body class="bg-secondary">
+	<!--J'ai mis certains commentaires : ce sont des codes php qui pourraient aider pour le back-end  -->
+
+	
+<div class="container">
+	<div class="row">
+		<h4 class="alert alert-primary">Vous êtes à présent connecté au Forum de Discussion</h4>
+	</div><br> 
+
+	<div class="row justify-content-center" style="background: rgba(204,204,204,1); color: white;">
+    <form method="post" action="<?php echo base_url(); ?>location/trier" class="form-inline">
+      <div class="form-group">
+      <label class="mb-2 text-primary" style="font-weight: bold;">Catégorie :</label>
+      <select class="form-control form-control-sm mx-sm-3 mb-2x" name="categorie">
+        <option value="none">--Choisir une catégorie--</option>
+        <option value="Categorie_1">Categorie 1 </option>
+        <option value="Categorie_2">Categorie 2</option>
+        <option value="Categorie_3">Categorie 3</option>
+      </select>
+    </div>	
+    <div class="form-group">
+      <label class="mb-2 text-primary" style="font-weight: bold;">Date :</label>
+      <select class="form-control form-control-sm mx-sm-3 mb-2x" name="categorie">
+        <option value="none">--Choisir une catégorie--</option>
+        <option value="Date_1">Moins d'une semaine</option>
+        <option value="Date_2">Moins de deux semaines</option>
+        <option value="Date_3">Moins d'un mois</option>
+      </select>
+    </div>
+
+      <button type="submit" class="btn btn-primary">Trier</button>
+    </form>
+  </div><br>
+<div class="row">
+	
+
+<br>
+	<div class="col-xs-12  col-sm-12 col-md-8"  style="max-height: 100vh;  overflow-y: scroll;">
+<br>
+		 <!-- <?php if ($this->session->flashdata('connexion_reussie')): ?> -->
+    <!-- <h4 class="alert alert-primary">Vous êtes à présent connecté au Forum de Discussion</h4> -->
+ <!--  <?php endif; ?> -->
+
+		<h2 class="text-primary text-center text-uppercase">Tous les sujets </h2>
+	<!-- <?php if (empty($posts)) : ?>
+			<p class="text-center">Aucun post pour le moment !!!</p>
+	<?php else : ?> -->
+		<!-- <?php foreach ($posts as $post) :?> -->
+			<article style="width: 100%; margin: 2% 0;">
+				<div class="bg-primary" style="color: white; padding: 1.5% 3% ;">
+				<h4><?php echo $post['nom'];?></h4>
+				<small style="color: #fff; padding: 5px;"><span class="post">Posté à :</span>&nbsp;&nbsp; "Date du post" &nbsp;&nbsp;&nbsp;<span class="post">par :</span> "Nom de l'étudiant" &nbsp;&nbsp;<span class="post">&nbsp;&nbsp;&nbsp;dans la catégorie :</span>&nbsp;&nbsp; "Nom de la catégorie"</small><br> </div>
+				<div class="bg-secondary" style="padding: 0 2%;">
+					<div style="background: rgba(255,255,255,.7); padding: 2%;">
+					<p><span class='post text-primary' style="text-decoration: underline;">Sujet :</span> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+
+					<a type="button" class="btn btn-primary" style="position: relative; left: 80%; margin: 2%;" href="lire_plus.html">Lire Plus </a>
+					<div class="row bg-secondary">
+						<div class="col-6"><span class="post" style="font-weight: bold; padding: 5%;">45</span><i class="fa fa-lg fa-user text-primary"></i> Personnes touchées </div>
+						<div class="col-6"><span class="post" style="font-weight: bold; padding: 5%">100 </span><i class="fa fa-lg fa-comments text-primary"></i> Réactions  </div>
+					</div>
+					
+					</div>
+			</div>
+			</article><br>
+
+			<article style="width: 100%; margin: 2% 0;">
+				<div class="bg-primary" style="color: white; padding: 1.5% 3% ;">
+				<h4><?php echo $post['nom'];?></h4>
+				<small style="color: #fff; padding: 5px;"><span class="post">Posté à :</span>&nbsp;&nbsp; "Date du post" &nbsp;&nbsp;&nbsp;<span class="post">par :</span> "Nom de l'étudiant" &nbsp;&nbsp;<span class="post">&nbsp;&nbsp;&nbsp;dans la catégorie :</span>&nbsp;&nbsp; "Nom de la catégorie"</small><br> </div>
+				<div class="bg-secondary" style="padding: 0 2%;">
+					<div style="background: rgba(255,255,255,.7); padding: 2%;">
+					<p><span class='post text-primary' style="text-decoration: underline;">Sujet :</span> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book...</p>
+					
+					
+					<a type="button" class="btn btn-primary" style="position: relative; left: 80%; margin: 2%;" href="lire_plus.html">Lire Plus </a>
+
+					<div class="row bg-secondary">
+						<div class="col-6"><span class="post" style="font-weight: bold; padding: 5%;">45</span><i class="fa fa-lg fa-user text-primary"></i> Personnes touchées </div>
+						<div class="col-6"><span class="post" style="font-weight: bold; padding: 5%">100 </span><i class="fa fa-lg fa-comments text-primary"></i> Réactions  </div>
+					</div>
+					</div>
+			</div>
+			</article>
+
+		<!-- <?php endforeach; ?> -->
+
+		<!-- <div class="pagination">
+			<?php echo $this->pagination->create_links(); ?>
+		</div> -->
+
+	<!-- <?php endif; ?> -->
+	<div>
+	  <ul class="pagination">
+	    <li class="page-item disabled">
+	      <a class="page-link" href="#">&laquo;</a>
+	    </li>
+	    <li class="page-item active">
+	      <a class="page-link" href="#">1</a>
+	    </li>
+	    <li class="page-item">
+	      <a class="page-link" href="#">2</a>
+	    </li>
+	    <li class="page-item">
+	      <a class="page-link" href="#">3</a>
+	    </li>
+	    <li class="page-item">
+	      <a class="page-link" href="#">&raquo;</a>
+	    </li>
+	  </ul>
+	</div>
+	</div>
+	<div class=" col-sm-12 col-xs-12 col-md-4">
+		<br>
+		<h3 class="text-primary text-center text-uppercase">Creer un sujet</h3><br>
+		<form method="POST" action="<?php echo base_url(); ?>blog/vue">
+			<label class="text-primary">Nom :</label>
+			<input class="form-control" type="text" name="pseudo" readonly="" value='"Nom de l_étudiant"'>
+			<br>
+			<label class="text-primary">Catégorie : </label>
+			<div class="form-group">
+			    <select class="custom-select">
+			      <option selected="">Choisissez une catégorie ...</option>
+			      <option value="1">Catégorie 1</option>
+			      <option value="2">Catégorie 2</option>
+			      <option value="3">Catégorie 3</option>
+			    </select>
+			  </div>
+
+			<label class="text-primary">Titre du sujet :</label>
+			<input class="form-control" type="text" name="nom" required="">
+			<br>
+			<label class="text-primary">Corps du sujet:</label>
+			<textarea class="form-control" id="editor1" name="message" required="">Inscrivez votre sujet ici ...</textarea>
+			<br>
+			<!-- <select>
+				<?php foreach ($variable as $key) :?>
+					<option><?php echo $post['pseudo'];?></option>
+				<?php endforeach; ?>
+			</select> -->
+			<button type="submit" class="btn btn-primary btn-block"> Poster</button>
+		</form>
+	</div>
+</div>
+</div><br><br><br>
+
+</div>
+<style type="text/css">
+	.pagination strong{
+		padding: 5px;
+		color: white;
+		background-color: rgba(21,21,54,0.6);
+		border: 1px solid rgba(21,21,54,0.6);
+	}
+	.pagination a{
+		color: rgba(21,21,54,0.6);
+		margin: 10px 10px;
+	}
+</style>
+
+<script type="text/javascript">
+	CKEDITOR.replace('editor1');
+
+      var blog = document.getElementById('blog');
+      blog.className = "active";
+
+</script>
+</body>
