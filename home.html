@@ -17,6 +17,9 @@
 
       gtag('config', 'UA-23019901-1');
     </script>
+    <style type="text/css">
+     
+    </style>
   </head>
   <body id="home">
 
@@ -31,14 +34,14 @@
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Faq</a>
+                <a class="nav-link" href="faq.html">Faq</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Forum</a>
+                <a class="nav-link" href="fc.html">Forum</a>
               </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-              <button type="button" class="btn btn-outline-secondary">Aller à etudiant.bj</button>
+              <button type="button" class="btn btn-outline-secondary">Aller etudiant.bj</button>
             </form>
         </div>
       </nav>
@@ -50,10 +53,16 @@
           <div class="col-lg-12 col-sm-12">
             <h1 style="margin-bottom: 30px; font-style: italic;"> Aide à l'utilisation de etudiant.bj</h1>
             <h4 style="color: white; margin-bottom: 20px; font-style: italic;">Recherchez ici</h4>
-            <div class="d-flex justify-content-center" style="position: relative; display: inline; left:3%;">
-              <form class="form-inline" style="display: inline-block;">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+            <div class="d-flex justify-content-center">
+              <form class="form-inline">
+                <div class="row">
+                  <div>
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                  </div>
+                  <div>
+                    <a href="#" onclick="ShowHide('result_search');"><button class="btn btn-dark" type="submit">Search</button></a>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
@@ -61,46 +70,67 @@
       </div>
     </div>
 
+    <div id="result_search" class="bg-light" style="display: none;">
+      <div class="col-md-10 mx-auto" style="padding: 10px;">
+        <div class="text-dark">
+          <h6>Résultat des recherche dans les FAQ :</h6>
+          <p>Ce wiki ne permet pas d'utiliser JavaScript dans ses pages, il n'est donc pas possible de montrer la démonstration ici. Cela ressemble à ceci, avant et après que vous appuyiez sur le bouton.</p>
+        </div>
+        <hr>
+        <div class="text-dark">
+          <h6>Résultat des recherche dans le FORUM :</h6>
+          <p>Ce wiki ne permet pas d'utiliser JavaScript dans ses pages, il n'est donc pas possible de montrer la démonstration ici. Cela ressemble à ceci, avant et après que vous appuyiez sur le bouton.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dmtop">Scroll to Top</div>
+
+      <script src="./_assets/jquery/jquery.min.js"></script>
+
+      <script src="./_assets/js/main.js"></script>
+    </div>
+
     <div class="section-tout">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-sm-6">
-            <a href="faq_categorie.html">
+            <a href="faq.html#categorie1" class="badge">
               <div class="icon"><i class="fa fa-file-o white"></i></div>
               <h4>Categorie faq 1</h4>
             </a>
             <p>Simply download a CSS file and replace the one in Bootstrap. No messing around with hex values.</p>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a href="faq_categorie.html">
+            <a href="faq.html#categorie2" class="badge">
               <div class="icon"><i class="fa fa-cogs"></i></div>
               <h4>Categorie faq 2</h4>
             </a>
             <p>Changes are contained in just two SASS files, enabling further customization and ensuring forward compatibility.</p>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a href="faq_categorie.html">
+            <a href="faq.html#categorie3" class="badge">
               <div class="icon"><i class="fa fa-wrench"></i></div>
               <h4>Categorie faq 3</h4>
             </a>
             <p>Themes are built for the latest version of Bootstrap. <a href="2/">2.3.2</a>, <a href="3/">3.4.1</a>, and <a target="_blank" rel="noopener noreferrer" href="https://github.com/thomaspark/bootswatch/releases">other releases</a> are also available to download.</p>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a href="faq_categorie.html">
+            <a href="faq.html#categorie1" class="badge">
               <div class="icon"><i class="fa fa-github"></i></div>
               <h4>Open Source</h4>
             </a>
             <p>Bootstrap themes are released under the MIT License and maintained by the community on <a target="_blank" rel="noopener noreferrer" href="https://github.com/thomaspark/bootswatch">GitHub</a>.</p>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a href="faq_categorie.html">
+            <a href="faq.html#categorie2" class="badge">
               <div class="icon"><i class="fa fa-plug"></i></div>
               <h4>Get Plugged In</h4>
             </a>
             <p>An <a href="./help/#api">API</a> is available for integrating with your platform. In use by <a href="https://nodebb.org/" target="_blank" rel="noopener noreferrer">NodeBB</a> and many more.</p>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a href="faq_categorie.html">
+            <a href="faq.html#categorie3" class="badge">
               <div class="icon"><i class="fa fa-bullhorn"></i></div>
               <h4>Stay Updated</h4>
             </a>
@@ -113,19 +143,19 @@
     <div class="section-preview col-md-10 mx-auto">
       <h1 class="mb-3 text-dark">Les dernières actualités</h1>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item active"><i style="color: #FE9A2E;margin: 5px;" class="fa fa-rss"></i>Rubrique 1</li>
+        <li class="breadcrumb-item active"><i style="margin: 5px; color: #FE9A2E;" class="fa fa-rss"></i> Rubrique 1</li>
       </ol>
 
       <div class="card border-warning">
         <div class="card-header bg-light">
-          <div class="row">
-            <div class="col-md-8 text-center">
+          <div class="row no-gutter">
+            <div class="col-8 text-center">
               <i class="fa fa-file-o" aria-hidden="true"></i>
             </div>
-            <div class="col-md-1 text-center">
+            <div class="col-1 text-center">
               <i class="fa fa-comments" aria-hidden="true"></i> 
             </div>
-            <div class="col-md-3 text-center">
+            <div class="col-3 text-center">
               <i class="fa fa-clock-o" aria-hidden="true"></i>
             </div>
           </div>
@@ -133,56 +163,54 @@
 
         <div class="card-body">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-md-8">
-                  <h4 class="card-title"><a href="#">Warning card title</a></h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <div class="col-md-1 text-center">
-                  255
-                </div>
-                <div class="col-md-3">
-                  <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 20/09/2020 à 
-                  18:50 par <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Fabien Jule</a> 
-                </div>
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
-            </li>
+              <div class="col-1 text-center">
+                58
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 14/18/2020 à 
+                18:50 par <br><i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Ducon Arold</a> 
+              </div>
+            </div>
 
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-md-8">
-                  <h4 class="card-title"><a href="#">Warning card title</a></h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <div class="col-md-1 text-center">
-                  25
-                </div>
-                <div class="col-md-3">
-                  <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 20/09/2020 à 
-                  18:50 par <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Fabien Jule</a> 
-                </div>
+            <br>
+
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
-            </li>
+              <div class="col-1 text-center">
+                255
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 20/09/2020 à 
+                18:50 par <br><i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Fabien Jule</a> 
+              </div>
+            </div>
           </ul>
 
         </div>
       </div><br>
 
       <ol class="breadcrumb">
-        <li class="breadcrumb-item active"><i style="color: #FE9A2E;margin: 5px;" class="fa fa-rss"></i>Rubrique 2</li>
+        <li class="breadcrumb-item active rubrique"><i style="margin: 5px; color: #FE9A2E;" class="fa fa-rss"></i>Rubrique 2</li>
       </ol>
 
       <div class="card border-warning">
         <div class="card-header bg-light">
-          <div class="row">
-            <div class="col-md-8 text-center">
+          <div class="row no-gutter">
+            <div class="col-8 text-center">
               <i class="fa fa-file-o" aria-hidden="true"></i>
             </div>
-            <div class="col-md-1 text-center">
+            <div class="col-1 text-center">
               <i class="fa fa-comments" aria-hidden="true"></i> 
             </div>
-            <div class="col-md-3 text-center">
+            <div class="col-3 text-center">
               <i class="fa fa-clock-o" aria-hidden="true"></i>
             </div>
           </div>
@@ -190,57 +218,54 @@
 
         <div class="card-body">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-md-8">
-                  <h4 class="card-title"><a href="#">Warning card title</a></h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <div class="col-md-1 text-center">
-                  255
-                </div>
-                <div class="col-md-3">
-                  <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 20/09/2020 à 
-                  18:50 par <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Fabien Jule</a> 
-                </div>
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
-            </li>
+              <div class="col-1 text-center">
+                58
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 14/18/2020 à 
+                18:50 par <br><i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Ducon Arold</a> 
+              </div>
+            </div>
 
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-md-8">
-                  <h4 class="card-title"><a href="#">Warning card title</a></h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <div class="col-md-1 text-center">
-                  25
-                </div>
-                <div class="col-md-3">
-                  <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 20/09/2020 à 
-                  18:50 par <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Fabien Jule</a> 
-                </div>
+            <br>
+
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
-            </li>
+              <div class="col-1 text-center">
+                255
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 20/09/2020 à 
+                18:50 par <br><i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Fabien Jule</a> 
+              </div>
+            </div>
           </ul>
-
         </div>
       </div><br>
 
 
       <ol class="breadcrumb">
-        <li class="breadcrumb-item active"><i style="color: #FE9A2E;margin: 5px;" class="fa fa-rss"></i>Rubrique 3</li>
+        <li class="breadcrumb-item active"><i style="margin: 5px; color: #FE9A2E;" class="fa fa-rss"></i>Rubrique 3</li>
       </ol>
 
       <div class="card border-warning">
         <div class="card-header bg-light">
-          <div class="row">
-            <div class="col-md-8 text-center">
+          <div class="row no-gutter">
+            <div class="col-8 text-center">
               <i class="fa fa-file-o" aria-hidden="true"></i>
             </div>
-            <div class="col-md-1 text-center">
+            <div class="col-1 text-center">
               <i class="fa fa-comments" aria-hidden="true"></i> 
             </div>
-            <div class="col-md-3 text-center">
+            <div class="col-3 text-center">
               <i class="fa fa-clock-o" aria-hidden="true"></i>
             </div>
           </div>
@@ -248,44 +273,40 @@
 
         <div class="card-body">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-md-8">
-                  <h4 class="card-title"><a href="#">Warning card title</a></h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <div class="col-md-1 text-center">
-                  255
-                </div>
-                <div class="col-md-3">
-                  <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 20/09/2020 à 
-                  18:50 par <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Fabien Jule</a> 
-                </div>
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
-            </li>
+              <div class="col-1 text-center">
+                58
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 14/18/2020 à 
+                18:50 par <br><i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Ducon Arold</a> 
+              </div>
+            </div>
 
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-md-8">
-                  <h4 class="card-title"><a href="#">Warning card title</a></h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <div class="col-md-1 text-center">
-                  25
-                </div>
-                <div class="col-md-3">
-                  <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 20/09/2020 à 
-                  18:50 par <i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Fabien Jule</a> 
-                </div>
+            <br>
+
+            <div class="row no-gutter list-item">
+              <div class="col-8">
+                <h4 class="card-title"><a href="lire_plus.html">Warning card title</a></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
-            </li>
+              <div class="col-1 text-center">
+                255
+              </div>
+              <div class="col-3 text-center" style="padding-left: 5px;">
+                <i class="fa fa-file-o" style="margin-right: 5px;" aria-hidden="true"></i>Poster le 20/09/2020 à 
+                18:50 par <br><i class="fa fa-user-o" style="margin-right: 5px;" aria-hidden="true"></i><a href="#">Fabien Jule</a> 
+              </div>
+            </div>
           </ul>
 
         </div>
       </div><br>
-
-      <button type="button" class="btn btn-outline-primary pull-right">Accéder au forum</button>
-
+      <a href="fc.html"><button type="button" class="btn btn-outline-primary pull-right">Accéder au forum</button></a>
     </div>
 
       <footer class="footer-distributed">
@@ -302,11 +323,11 @@
         <div class="footer-left">
 
           <p class="footer-links">
-            <a class="link-1" href="#home">Home</a>
+            <a class="link-1" href="home.html">Home</a>
 
-            <a href="#">Faq</a>
+            <a href="faq.html">Faq</a>
 
-            <a href="#">Blog</a>
+            <a href="fc.html">Forum</a>
 
             <a href="#">Contact</a>
           </p>
@@ -314,11 +335,13 @@
           <p>Geek UNSTIM &copy; 2020</p>
         </div>
 
+        <div class="dmtop">Scroll to Top</div>
+
       </footer>
 
-    <script src="./_vendor/jquery/dist/jquery.min.js"></script>
-    <script src="./_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./_assets/js/custom.js"></script>
+      <script src="./_assets/jquery/jquery.min.js"></script>
+      <script src="./_assets/js/main.js"></script>
+      <script src="./_assets/jquery/jquery.min.js"></script>
     <script>
       !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
@@ -333,5 +356,17 @@
       });
       /* FAQ */
     </script>
+
+    <script>
+      function ShowHide(id) {
+    var NameDiv = document.getElementById(id);
+    if (NameDiv.style.display === 'none') {
+        NameDiv.style.display = 'block';
+    } else {
+        NameDiv.style.display = 'none';
+    }
+}
+    </script>
+
   </body>
 </html>
